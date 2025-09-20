@@ -6,8 +6,9 @@ type user = {
     language: string[];
 }
 
+
+
 export default function Users(props:user) {
-    console.log(props.language)
   return (
     <div>
         <h1>{props.name}</h1>

@@ -1,12 +1,21 @@
 
 import './App.css'
 import Button from './components/Button'
+import Person from './components/Person'
 import Users from './components/Users'
 
 function App() {
 
   const handleClic = ():void => {
     alert("Button click")
+  }
+
+  const person = {
+    id: 4564,
+    name: "mahatab",
+    roll: 845785,
+    tecnologe: ["HTML", "CSS" ,"JAVASCRIPT", "REACT"],
+    isExpart: true
   }
 
   return (
@@ -18,6 +27,8 @@ function App() {
      <div>
       <Button  onClick={handleClic}/>
      </div>
+
+     <Person onPerson = {person}/>
     </>
   )
 }
