@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button";
 import Person from "./components/Person";
+import UserFrom from "./components/UserFrom";
 import UserList from "./components/UserList";
 import Users from "./components/Users";
 
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
       <h1 className="heading">React TypeScript</h1>
-
+      <UserFrom/>
       <Users
         name="mahatab hosen"
         age={20}
