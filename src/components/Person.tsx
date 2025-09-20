@@ -9,21 +9,21 @@ type personInfo = {
 };
 
 export default function Person({ onPerson }: personInfo) {
-  console.log(onPerson);
+ 
   return (
     <div>
       <p>id:{onPerson.id}</p>
       <h1>Name: {onPerson.name}</h1>
       <p>Roll: {onPerson.roll}</p>
-      <p>
-        {onPerson.tecnologe.map((tech) => {
+      <div>
+        {onPerson.tecnologe.map((tech, index) => {
           return (
-            <div>
+            <div key={index}>
               <p>{tech}</p>
             </div>
           );
         })}
-      </p>
+      </div>
 
       <p>{onPerson.isExpart ? "Yes expart" : "No expart"}</p>
     </div>
